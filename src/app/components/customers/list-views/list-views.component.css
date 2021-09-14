@@ -1,0 +1,29 @@
+table{
+  color: white;
+  width: 100%;
+  padding: 1.5rem .5rem!important;
+}
+img{
+  width: 50px;
+  margin-left: 15px;
+}
+button{
+  background-color: transparent;
+}
+button:hover{
+  cursor: pointer;
+}
+button:focus a{
+  color: blue;
+}
+a{
+  text-decoration: none;
+}
+td{
+  line-height: 51px;
+}
+.tables{
+  width: 100%;
+}
+
+

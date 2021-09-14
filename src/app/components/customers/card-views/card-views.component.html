@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-sm-6"   *ngFor="let user of customers">
+      <div class="card mb-3" style="max-width: 540px;" >
+
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img
+             src="../../../../assets/male.png"
+             class="card-img" alt="..."
+             *ngIf="user.gender === 'male' "
+             >
+            <img
+             src="../../../../assets/female.png"
+             class="card-img" alt="..."
+             *ngIf="user.gender === 'female' "
+             >
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <a class="card-title" routerLink="/customers/{{user.id}}/info/details">{{user.firstName}} {{user.lastName}} </a>
+              <h4 class="card-text">{{user.city}}</h4>
+              <h4 class="card-text">{{user.state.name}}</h4>
+              <button>
+                <a class="card-text" routerLink="/customers/{{user.id}}/info/order" ><small class="text-muted">View Orders</small></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end card  -->
+  </div>
+
+<mat-paginator
+              [length]="totalRecords"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              (page)="onChange($event)"
+              aria-label="Select page">
+</mat-paginator>
+</div>

@@ -1,0 +1,27 @@
+<div class="container">
+  <h2><i class="fas fa-user"></i> Customer Information</h2>
+  <mat-tab-group animationDuration="0ms" >
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <i class="fas fa-bars"></i>
+        Customer Details
+      </ng-template>
+     <app-details></app-details>
+    </mat-tab>
+<!-- end tab  -->
+    <mat-tab label="Customer Order">
+      <ng-template mat-tab-label>
+        <i class="fas fa-tags"></i>
+        Customer Orders
+      </ng-template>
+      <app-order></app-order>
+    </mat-tab>
+    <mat-tab label="Edit Customer">
+      <ng-template mat-tab-label>
+        <i class="far fa-edit"></i>
+        Edit Customer
+      </ng-template>
+     <app-edit></app-edit>
+    </mat-tab>
+  </mat-tab-group>
+</div>

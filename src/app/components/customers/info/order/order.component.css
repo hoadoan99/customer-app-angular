@@ -1,0 +1,23 @@
+p,h1,h2,h3,div{
+  color:#fff;
+}
+
+span{
+  font-size: 16px;
+  padding:8px 0;
+}
+
+.order{
+  width: 100%;
+}
+.wpapper-order{
+  width: 100%;
+}
+.order-item{
+  display: flex;
+  justify-content: space-between;
+}
+.view-cus{
+  width:100%;
+  margin-top: 70px;
+}

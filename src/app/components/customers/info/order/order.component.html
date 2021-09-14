@@ -1,0 +1,25 @@
+<div class="row mt-5 order">
+      <div class="col-sm-5">
+        <h1>Orders for Name Customer</h1>
+        <div class="wpapper-order mt-2">
+          <div class="order-item">
+            <span>{{nameOrders[0]}}</span>
+            <span>{{costOrders[0]}}</span>
+          </div>
+          <div class="order-item">
+            <span>{{nameOrders[1]}}</span>
+            <span>{{costOrders[1]}}</span>
+          </div>
+          <hr>
+          <div class="order-item">
+            <span></span>
+            <span>{{totalOrder | currency}}</span>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="row view-cus">
+  <div class="col-sm-3">
+    <a class="btn btn-outline-secondary" routerLink="/customers">View All Customers</a>
+  </div>
+</div>

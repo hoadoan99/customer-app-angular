@@ -1,0 +1,14 @@
+img{
+  margin-top: 5px;
+  margin-left: 5px;
+}
+button{
+  background-color: transparent;
+  border:none;
+}
+a:hover{
+  cursor: pointer;
+}
+a{
+  font-size: 20px;
+}
