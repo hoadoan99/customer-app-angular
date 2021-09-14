@@ -20,7 +20,8 @@ import { OrderComponent } from './components/customers/info/order/order.componen
 import { AddComponent } from './components/customers/info/add/add.component';
 import { EditComponent } from './components/customers/info/edit/edit.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
-
+import {FormsModule, NgForm} from '@angular/forms';
+import { SettingComponent } from './components/setting/setting.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     DetailsComponent,
     OrderComponent,
     AddComponent,
-    EditComponent
+    EditComponent,
+    SettingComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +46,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatCardModule,
     HttpClientModule,
     MatPaginatorModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    FormsModule
+
 
   ],
   providers: [],

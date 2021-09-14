@@ -1,14 +1,14 @@
-p{
-  color:#fff;
-}
-.row{
-  color: white;
+label{
+  color: #fff;
 }
 .button-group{
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .button-gr-right button:first-child{
   margin-right: 8px;
+}
+h1{
+
+  color: #fff;
 }

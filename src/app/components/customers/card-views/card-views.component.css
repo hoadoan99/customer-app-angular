@@ -12,3 +12,10 @@ a:hover{
 a{
   font-size: 20px;
 }
+h1,h2{
+  color: white;
+}
+.wrapper-top{
+  display: flex;
+  justify-content: space-between;
+}

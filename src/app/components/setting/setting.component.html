@@ -1,9 +1,10 @@
 <div class="container">
   <div class="row mt-4">
     <div class="col-sm-6">
-      <form #f="ngForm" (ngSubmit)="onSubmit(f.value)" novalidate>
+      <h1><i class="fas fa-user-cog"></i> Settings</h1>
+      <form #f="ngForm" novalidate>
         <div class="form-group">
-          <label for="firstName">First Name</label>
+          <label for="firstName">Current Email</label>
           <input
           type="text"
           class="form-control mb-4"
@@ -11,12 +12,11 @@
           placeholder="Enter First Name"
           required
           name="firstName"
-          [(ngModel)]="firstName"
           >
         </div>
         <!-- end first name  -->
         <div class="form-group">
-          <label for="lastName">Last Name</label>
+          <label for="lastName">New Email</label>
           <input
           type="text"
           class="form-control mb-4"
@@ -29,7 +29,7 @@
         </div>
         <!-- end last name  -->
         <div class="form-group">
-          <label for="address">Address</label>
+          <label for="address">Confirm Password</label>
           <input
           type="address"
           class="form-control mb-4"
@@ -37,12 +37,11 @@
           placeholder="Enter Address"
           required
           name="address"
-          [(ngModel)]="address"
           >
         </div>
           <!-- end address  -->
         <div class="form-group">
-          <label for="city">City</label>
+          <label for="city">Number of page</label>
           <input
           type="text"
           class="form-control mb-4"
@@ -50,28 +49,14 @@
           placeholder="Enter City"
           required
           name="city"
-          [(ngModel)]="city"
           >
         </div>
           <!-- end city  -->
-        <div class="form-group">
-          <label for="state">State</label>
-          <input
-          type="text"
-          class="form-control mb-4"
-          id="state"
-          placeholder="Enter State"
-          required
-          name="state"
-
-          >
-        </div>
           <!-- end state  -->
         <div class="button-group mt-3">
-          <button type="submit" class="btn btn-danger">Delete</button>
           <div class="button-gr-right">
             <button type="button" class="btn btn-light">Cancel</button>
-            <button type="button" class="btn btn-success">Update</button>
+            <button type="button" class="btn btn-success">Save</button>
           </div>
         </div>
       </form>

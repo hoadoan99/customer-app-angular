@@ -18,7 +18,12 @@
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <a class="card-title" routerLink="/customers/{{user.id}}/info/details">{{user.firstName}} {{user.lastName}} </a>
+              <div class="wrapper-top">
+                <a class="card-title" routerLink="/customers/{{user.id}}/info/details">{{user.firstName}} {{user.lastName}} </a>
+                <a routerLink="/customers/:id/info/edit">
+                <i class="fas fa-edit"></i>
+                </a>
+              </div>
               <h4 class="card-text">{{user.city}}</h4>
               <h4 class="card-text">{{user.state.name}}</h4>
               <button>

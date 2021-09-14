@@ -1,9 +1,13 @@
-<div class="card mt-3" style="width: 18rem;">
-  <img class="card-img-top img-fluid" src="../../../../../assets/male.png" alt="Card image cap">
-  <div class="card-body">
-    <h2 class="card-title">{{firstName}}</h2>
-    <p class="card-text">{{address}}</p>
-    <p class="card-text">{{city}}</p>
-    <a href="#" class="btn btn-outline-secondary" routerLink="/">View All Customers</a>
+
+  <div class="card mt-3" style="width: 18rem;">
+    <img class="card-img-top img-fluid" *ngIf="gender === 'male'" src="../../../../../assets/male.png" alt="Card image cap">
+    <img class="card-img-top img-fluid" *ngIf="gender === 'female'" src="../../../../../assets/female.png" alt="Card image cap">
+    <div class="card-body">
+      <h2 class="card-title">{{firstName}}</h2>
+      <p class="card-text">{{address}}</p>
+      <p class="card-text">{{city}}</p>
+      <a href="#" class="btn btn-outline-secondary" routerLink="/">View All Customers</a>
+    </div>
   </div>
-</div>
+
+<!-- end tab  -->
